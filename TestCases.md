@@ -1,7 +1,5 @@
 #  TestCases.md
 
-##  Мета роботи
-Мета цього практичного завдання — створити 2–3 тест-кейси для проєкту **GreenHome** з використанням фреймворку **JUnit 5**.  
 Тестування проводиться для базового функціоналу системи авторизації користувачів: перевірка входу, реєстрації та обробки дублікатів.
 
 ##  Контекст проєкту
@@ -32,7 +30,7 @@
 @Test
 void testSuccessfulLogin() {
     boolean result = authService.login("testuser@gmail.com", "123456");
-    assertTrue(result, "Користувач повинен успішно авторизуватись");
+    assertTrue(result, "Користувач успішно авторизувався");
 }
 ```
 
@@ -55,7 +53,7 @@ void testSuccessfulLogin() {
 @Test
 void testLoginWithInvalidPassword() {
     boolean result = authService.login("testuser@gmail.com", "wrongpass");
-    assertFalse(result, "Авторизація з невірним паролем має бути відхилена");
+    assertFalse(result, "Авторизація з невірним паролем відхилена");
 }
 ```
 
@@ -79,7 +77,7 @@ void testLoginWithInvalidPassword() {
 void testDuplicateUserRegistration() {
     assertThrows(UserAlreadyExistsException.class, () -> {
         authService.register("testuser@gmail.com", "123456");
-    }, "Система повинна заборонити створення дубліката користувача");
+    }, "Система забороняє створення дублікатів користувача");
 }
 ```
 
@@ -102,7 +100,7 @@ void testDuplicateUserRegistration() {
 @Test
 void testRegisterNewUser() {
     boolean result = authService.register("newuser@gmail.com", "pass123");
-    assertTrue(result, "Користувач повинен бути успішно створений");
+    assertTrue(result, "Користувач успішно створений");
 }
 ```
 
