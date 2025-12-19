@@ -20,9 +20,13 @@ GreenHome дозволяє:
 
 /
 ├── requirements/ # Документація вимог
+
 ├── ProjectPlan.md # План проєкту
+
 ├── RiskMatrix.md # Матриця ризиків
+
 ├── TestCases.md # Тест-кейси
+
 ├── README.md # Цей файл
 
 ---
