@@ -18,15 +18,15 @@ GreenHome дозволяє:
 
 ##  Структура репозиторію
 
-── requirements/ # Документація вимог
+- requirements/ # Документація вимог
 
-── ProjectPlan.md # План проєкту
+─ ProjectPlan.md # План проєкту
 
-── RiskMatrix.md # Матриця ризиків
+─ RiskMatrix.md # Матриця ризиків
 
-── TestCases.md # Тест-кейси
+─ TestCases.md # Тест-кейси
 
-── README.md # Цей файл
+─ README.md # Цей файл
 
 ---
 
