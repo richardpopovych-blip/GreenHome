@@ -26,7 +26,7 @@ GreenHome дозволяє:
 
 - TestCases.md # Тест-кейси
 
-─ README.md # Цей файл
+- README.md # Цей файл
 
 ---
 
